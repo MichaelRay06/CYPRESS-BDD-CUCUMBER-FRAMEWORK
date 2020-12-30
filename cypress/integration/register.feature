@@ -1,14 +1,14 @@
 Feature: filling registration form
 
 
-Scenario Outline: I could register
+    Scenario Outline: I could register
 
-        When I enter my "<First_name>"
-        When I enter as "<Second_name>"
+        When I enter my "<myFirst_name>"
+        When I enter as "<mySecond_name>"
         And my email address
         And my personal "<my_Gender>"
         When I enter phone number
-        And my date of birth for "<month>" for "<day>" for "<year>"
+        And my date of birth for "<myMonth>" for "<myDay>" for "<myYear>"
         And I select my "<my_Subject>"
         And my personal hobby "<my_Hobbies>"
         And my current address is address
@@ -23,17 +23,17 @@ Scenario Outline: I could register
         And close the window
 
         Examples:
-            | First_name | Second_name | my_Gender | month   | day | year | my_Subject | my_Hobbies | my_State | my_City   | my_StateAndCity|
-            | mike       | mike        | Female    | October | 7   | 2018 | Maths        | Sports     | Haryana  | Panipat |  Haryana Panipat|
+            | myFirst_name | mySecond_name | my_Gender | myMonth | myDay | myYear | my_Subject | my_Hobbies | my_State | my_City | my_StateAndCity |
+            | mike         | mike          | Female    | October | 7     | 2018   | Maths      | Sports     | Haryana  | Panipat | Haryana Panipat |
 
 
 
 
-           Scenario: Using data table with cypress
-            Given I am on text box site
-            And I enter my datails as
-            |Full_Name     |Email                     |Current_Address     |Permanent_Address |
-            |Michael       |michaelRay343@gmail.com    |30 pevenscey court |waborn groove london|
-             And I submit the details
-             Then I could verify my_FullName
-             Then I could verify my current address
+    Scenario: Using data table with cypress
+        Given I am on text box site
+        And I enter my datails as
+            | Full_Name | Email                   | Current_Address    | Permanent_Address    |
+            | Michael   | michaelRay343@gmail.com | 30 pevenscey court | waborn groove london |
+        And I submit the details
+        Then I could verify my_FullName
+        Then I could verify my current address

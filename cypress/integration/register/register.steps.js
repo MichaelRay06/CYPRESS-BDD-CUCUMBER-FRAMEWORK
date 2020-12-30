@@ -5,14 +5,14 @@ before(()=>{
     cy.visit("https://demoqa.com/automation-practice-form");
 })
 
-When("I enter my {string}", (First_name) => {
-    cy.get('#firstName').type(First_name)
+When("I enter my {string}", (myFirst_name) => {
+    cy.get('#firstName').type(myFirst_name)
  
   });
 
  
- When("I enter as {string}", (Second_name) => {
-     cy.get('#lastName').type(Second_name)
+ When("I enter as {string}", (mySecond_name) => {
+     cy.get('#lastName').type(mySecond_name)
     
   });
 
@@ -45,14 +45,14 @@ When("I enter phone number", () => {
   });
 
 
-And("my date of birth for {string} for {string} for {string}", (month, day, year) => {
+And("my date of birth for {string} for {string} for {string}", (myMonth, myDay, myYear) => {
     cy.get('#dateOfBirthInput').click();
-    cy.get('select.react-datepicker__month-select').select(month) 
+    cy.get('select.react-datepicker__month-select').select(myMonth) 
 
-    cy.get('select.react-datepicker__year-select').select(year)
+    cy.get('select.react-datepicker__year-select').select(myYear)
 
     cy.get('.react-datepicker__day').each(($ele)=>{
-        if($ele.text().includes(day)){
+        if($ele.text().includes(myDay)){
             ($ele).click();
         }
 
