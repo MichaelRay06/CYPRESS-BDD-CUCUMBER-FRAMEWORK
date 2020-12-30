@@ -16,7 +16,7 @@ Feature: filling registration form
         And sumit details
         Then I confirm form sumbmission message
         Then I could vrify selected  "<my_Subject>"
-        Then I could vrify my names "<Second_name>"
+        Then I could vrify my names "<mySecond_name>"
         Then I could verify gender as "<my_Gender>"
         Then I could verify hobbies as "<my_Hobbies>"
         Then I could verify state and city as "<my_StateAndCity>"

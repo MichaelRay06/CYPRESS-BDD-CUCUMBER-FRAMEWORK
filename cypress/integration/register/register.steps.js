@@ -135,9 +135,9 @@ And(/^sumit details$/, () => {
     })
 
 
-  Then(/^I could vrify my names "([^"]*)"$/, (Seond_name) => {
+  Then(/^I could vrify my names "([^"]*)"$/, (mySecond_name) => {
     cy.get('tbody > :nth-child(1) > :nth-child(2)').then((ele)=> {
-      expect(ele.text()).to.includes(Seond_name)
+      expect(ele.text()).to.includes(mySecond_name)
 
     })
 
