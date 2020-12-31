@@ -12,13 +12,8 @@
     "dashBoard":  "cypress run --record --key 37d7e770-b53f-47d0-830a-dccd92c54d9f --headed",
     "dashBoardParallel":  "cypress run --record --key 37d7e770-b53f-47d0-830a-dccd92c54d9f --headed --parallel",
     "dashBoardHeadeless":  "cypress run --record --key 37d7e770-b53f-47d0-830a-dccd92c54d9f",
-<<<<<<< HEAD
-     "tags": "npx cypress-tags run -e TAGS='@mutilSelect' --browser chrome --headed",
-     "dashBoredMultiBrower": "npm run dashBoardHeadeless -- --browser chrome --headed &&  npm run dashBoardHeadeless -- --browser edge --headed && npm run headedLess -- --browser electron --headed",
-=======
      "tags": "npx cypress-tags run -e TAGS='@mutilSelect' --browser chrome --headed && npm run headedLess -- --browser electron --headed",
      "dashBoredMultiBrower": "npm run dashBoardHeadeless -- --browser chrome --headed &&  npm run dashBoardHeadeless -- --browser edge --headed",
->>>>>>> 9fbaa21a9a20d45ddfd7c6e87fb55958c6d628c4
      "multiBrowser": "npm run headedLess -- --browser electron --headed  &&  npm run headedLess -- --browser edge --headed  &&  npm run headedLess -- --browser chrome --headed"
   },
   "keywords": [],
