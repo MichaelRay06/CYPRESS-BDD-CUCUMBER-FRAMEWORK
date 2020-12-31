@@ -4,8 +4,10 @@
         agent any
         tools {nodejs "node"} 
 
+
             stages{
                 stage('Cypress Parallel Test Run'){
+
                     parallel{
                         stage('Slave_Node1') {
                             agent{
@@ -15,7 +17,7 @@
                                 git url: 'https://github.com/MichaelRay06/CYPRESS-BDD-CUCUMBER-FRAMEWORK.git'
                                 bat 'npm install'
                                 bat 'npm update'
-                                bat 'npm run dashBoard'
+                                bat 'npm run dashBoard2ParallelHeaded'
                             }
                         }
                          
@@ -27,7 +29,7 @@
                                 git url: 'https://github.com/MichaelRay06/CYPRESS-BDD-CUCUMBER-FRAMEWORK.git'
                                 bat 'npm install'
                                 bat 'npm update'
-                                bat 'npm run dashBoardParallel'
+                                bat 'dashBoardParallelHeaded'
                             }
                         }
                     }
