@@ -17,7 +17,7 @@
                                 git url: 'https://github.com/MichaelRay06/CYPRESS-BDD-CUCUMBER-FRAMEWORK.git'
                                 bat 'npm install'
                                 bat 'npm update'
-                                bat 'npm run %TestRun%'
+                                bat 'npm run dashBoardParallelHeaded'
                             }
                         }
                          
@@ -29,7 +29,7 @@
                                 git url: 'https://github.com/MichaelRay06/CYPRESS-BDD-CUCUMBER-FRAMEWORK.git'
                                 bat 'npm install'
                                 bat 'npm update'
-                                bat 'npm run %TestRun%'
+                                bat 'npm run dashBoardParallelHeaded'
                             }
                         }
                     }
